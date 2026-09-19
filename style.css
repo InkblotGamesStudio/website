@@ -348,6 +348,12 @@ p { margin: 0; }
 .section h2 + p { margin-top: 1.5rem; }
 .section .lede + .lede { margin-top: 1rem; }
 
+.subhead {
+  margin: 3rem 0 1.25rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--accent);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -468,10 +474,6 @@ p { margin: 0; }
   height: 100%;
   object-fit: cover;
 }
-
-/* the returns: colder and darker than the rest of the page */
-.band-returns .band-bg { filter: saturate(0.55) brightness(0.8) hue-rotate(-12deg); }
-.band-returns h2 { max-width: 16ch; }
 
 /* mirrored so the subject sits opposite the text */
 .band-bg-flip { transform: scaleX(-1); object-position: 22% center; }
