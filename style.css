@@ -493,6 +493,17 @@ p { margin: 0; }
 
 .band-tall .section { padding-block: clamp(7rem, 18vw, 14rem); }
 
+/* ---------- Simple pages (privacy, 404) ---------- */
+
+.page { border-top: 0; padding-top: clamp(7rem, 14vw, 10rem); min-height: 70svh; }
+.page-title { font-size: clamp(2.2rem, 6vw, 3.75rem); font-weight: 700; margin-bottom: 1.5rem; }
+
+.prose { max-width: 50rem; }
+.prose h2 { margin: 3rem 0 0.75rem; font-size: 1.4rem; max-width: none; }
+.prose p:not(.lede):not(.hud) { color: color-mix(in srgb, var(--text) 80%, var(--muted)); }
+.prose a { color: var(--accent); text-underline-offset: 3px; }
+.prose .caption { margin-top: 3rem; }
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -505,6 +516,8 @@ p { margin: 0; }
 }
 
 .footer img { width: 9rem; }
+.footer a { color: inherit; }
+.footer a:hover { color: var(--text); }
 
 /* ---------- Scroll reveal (class added by site.js) ---------- */
 
