@@ -292,6 +292,14 @@ p { margin: 0; }
   transition: background 0.2s, transform 0.2s;
 }
 
+.btn-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin: -0.4em 0.7em -0.4em 0;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
 .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
 
 .btn-ghost {
